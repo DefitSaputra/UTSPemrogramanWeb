@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>UTS - Pemrograman Web I</title>
+</head>
+<body>
+    <section class="navbar" id="home">
+    <a href="#home">Home</a>
+    <a href="#about-us">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#lanjutan" onclick="toggleDetails('lanjutan', 'btn1')">More</a>
+    </section>
+
+    <h1>Selamat Datang di Website Kami!</h1>
+
+    <div class="about-us">
+    <h2 id="about-us">Tentang Kami</h2>
+    <img src="img/about-us.jpg" alt="Tidak dapat memuat gambar">
+    <p>Kami adalah perusahaan yang berkomitmen untuk menyediakan layanan terbaik kepada pelanggan kami.
+        Dengan pengalaman bertahun-tahun di industri ini, kami yakin dapat memenuhi kebutuhan anda dengan
+        solusi inovatif dan profesionalisme tinggi. Tabel di bawah ini menunjukkan beberapa layanan unggulan kami.
+    </p>
+    </div>
+    
+    <div class="our-services">
+    <h2>Layanan Kami</h2>
+    <table id="services">
+        <tr>
+            <th>No</th>
+            <th>Layanan</th>
+            <th>Harga</th>
+            <th>Deskripsi</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Pengembangan Website</td>
+            <td>Rp 5.000.000</td>
+            <td>Pembuatan website profesional dengan desain responsif.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>SEO Optimization</td>
+            <td>Rp 2.500.000</td>
+            <td>Meningkatkan peringkat website Anda di mesin pencari.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Manajemen Media Sosial</td>
+            <td>Rp 3.000.000</td>
+            <td>Mengelola akun media sosial untuk meningkatkan brand awareness.</td>
+        </tr>
+    </table>
+    </div>
+
+    <button name="btn1" id="btn1" onclick="toggleDetails('lanjutan','btn1')">Pelajari Lebih Lanjut</button>
+
+    <div class="lanjutan" id="lanjutan">
+    <h2>1. Pengembangan Web (Rp5.000.000).</h2>
+    <img src="img/service1.jpg" alt="Gambar tidak dapat dimuat">
+    <p> Kami menawarkan layanan pengembangan website profesional yang responsif dan user-friendly. Setiap proyek website kami dibangun dengan teknologi terbaru dan desain yang modern, sesuai dengan kebutuhan bisnis klien. Kami memastikan bahwa website yang kami buat tidak hanya menarik secara visual, tetapi juga berfungsi optimal di berbagai perangkat.</p>
+
+    <h2>2. SEO Optimization (Rp.2.500.000).</h2>
+    <img src="img/service2.jpg" alt="Gambar tidak dapat dimuat">
+    <p>Dengan layanan SEO Optimization kami, website Anda akan lebih mudah ditemukan di mesin pencari seperti Google. Kami menggunakan teknik optimasi terbaru untuk meningkatkan peringkat website Anda, sehingga mendatangkan lebih banyak traffic yang relevan. Mulai dari optimasi on-page hingga off-page, kami memastikan website Anda mendapatkan visibilitas yang maksimal.</p>
+
+    <h2>3. Manajemen Media Sosial (Rp3.000.000).</h2>
+    <img src="img/service3.jpg" alt="Gambar tidak dapat dimuat">
+    <p>Layanan manajemen media sosial kami dirancang untuk membantu bisnis Anda meningkatkan interaksi dan membangun brand awareness yang lebih kuat. Kami akan mengelola akun media sosial Anda dengan strategi konten yang kreatif dan tepat sasaran, serta berinteraksi dengan audiens secara efektif untuk meningkatkan engagement dan memperluas jangkauan online Anda.</p>
+    </div>
+
+</body>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>Tentang Kami</h3>
+                <p>Kami berkomitmen menyediakan layanan digital terbaik bagi bisnis Anda, dari pengembangan website hingga manajemen media sosial.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#more">More</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Kontak Kami</h3>
+                <p>Email: info@defitSaputra.com</p>
+                <p>Telepon: +62 123-456-789</p>
+                <p>Alamat: Fakultas Teknik UNSOED, Purbalingga</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DefitSaputra. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script src="js/script.js"></script>
+</html>
